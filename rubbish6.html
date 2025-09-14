@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+      color: #fff;
+    }
+    .loader {
+      font-size: 80px;
+    }
+    .dots::after {
+      content: "";
+      display: inline-block;
+      width: 1px;
+    }
+    .dot1, .dot2, .dot3, .dot4 {
+      /* opacity: 0; */
+      margin-left: 6px;
+      animation: dots 1s infinite;
+    }
+    .dot2 { animation-delay: .15s }
+    .dot3 { animation-delay: .10s }
+    .dot4 { animation-delay: .75s }
+
+        @keyframes dots {
+      0% { opacity: 0 }
+      50% { opacity: 1 }
+      100% { opacity: 0 }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader">
+    <span style="font-weight:900">DeenC0m</span>
+    <span class="dot1">.</span>
+    <span class="dot2">.</span>
+    <span class="dot3">.</span>
+    <span class="dot4">.</span>
+  </div>
+  <script>
+  
+
+  </script>
+
+  
+</body>
+</html>
